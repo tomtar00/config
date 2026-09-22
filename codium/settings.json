@@ -17,5 +17,5 @@
     "files.autoSave": "afterDelay",
     "git.confirmSync": false,
     "editor.cursorSurroundingLines": 20,
-    "workbench.colorTheme": "Nightstorm Orange",
+    "workbench.colorTheme": "Nightstorm Orange"
 }

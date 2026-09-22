@@ -986,7 +986,7 @@
 		<key>switcherSearchPinEnabled</key>
 		<false/>
 		<key>switcherShortcut</key>
-		<string>command:48</string>
+		<string>option:48</string>
 		<key>switcherShowFullscreenWindows</key>
 		<true/>
 		<key>switcherShowShortcutHints</key>
