@@ -1,0 +1,43 @@
+[user]
+	name = name
+	email = email
+
+[core]
+	editor = nano
+	autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+	default = current
+
+[pull]
+    autoSetupRemote = true
+    rebase = true
+    ff = only
+
+[alias]
+	st = status                      # Short status
+    co = checkout                    # Switch branches
+    cb = checkout -b                 # Create and switch to a new branch
+    ci = commit                      # Commit changes
+    cm = commit -m                   # Commit with an inline message
+    ca = commit --amend              # Fix the last commit (great for typos)
+    br = branch
+
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    undo = reset --soft HEAD~1
+
+[color]
+    ui = auto
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[url "https://github.com/"]
+	insteadOf = git@github.com:
