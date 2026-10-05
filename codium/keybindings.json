@@ -22,5 +22,9 @@
     {
         "key": "ctrl+shift+i",
         "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "git.checkout"
     }
 ]
